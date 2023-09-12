@@ -5,7 +5,7 @@ import java.util.Date;
 public class Facturas {
 
 	private long id;
-	private Date createAt;
+	private Date fecha;
 	private String descripcion;
 	private double precio;
 	private Integer port;
@@ -16,12 +16,11 @@ public class Facturas {
 	public void setId(long id) {
 		this.id = id;
 	}
-	
-	public Date getCreateAt() {
-		return createAt;
+	public Date getFecha() {
+		return fecha;
 	}
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 	public String getDescripcion() {
 		return descripcion;

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.springboot.dark.app.facturacion.item.modelo.Facturas;
 
-@FeignClient(name = "servicio-facturas-items")
+@FeignClient(name = "servicio-items")
 public interface FacturasRest {
 
 	@GetMapping("/listar")

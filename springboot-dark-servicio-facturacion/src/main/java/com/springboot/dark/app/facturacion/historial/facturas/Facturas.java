@@ -14,23 +14,22 @@ import jakarta.persistence.TemporalType;
 import jakarta.persistence.Transient;
 
 @Entity
-@Table(name = "FACTURAS")
+@Table(name = "facturas")
 public class Facturas implements Serializable {
 
 	private static final long serialVersionUID = 7546328131693452374L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private long id;
 	private String descripcion;
 	private double precio;
 	
-	@Column(name ="create_at")
+	@Column(name = "factura")
 	@Temporal(TemporalType.DATE)
-	private Date createAt;
+	private Date fecha;
 
 	@Transient
-	
 	private Integer port;
 	
 	public Integer getPort() {
@@ -45,11 +44,11 @@ public class Facturas implements Serializable {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public Date getCreateAt() {
-		return createAt;
+	public Date getFecha() {
+		return fecha;
 	}
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 	public String getDescripcion() {
 		return descripcion;

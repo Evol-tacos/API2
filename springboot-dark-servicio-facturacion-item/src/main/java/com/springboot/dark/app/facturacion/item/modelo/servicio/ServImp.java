@@ -22,7 +22,7 @@ public class ServImp implements ServicioItems {
 	
 	@Override
 	public List<Items> findAll() {
-		List<Facturas> facturas = Arrays.asList(clienteRest.getForObject("https://localhost:8001/listar", Facturas[].class));
+		List<Facturas> facturas = Arrays.asList(clienteRest.getForObject("https://localhost8001/listar", Facturas[].class));
 		return facturas.stream().map(p -> new Items(p, 1)).collect(Collectors.toList());
 	}
 

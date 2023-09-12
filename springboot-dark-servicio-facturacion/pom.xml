@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springboot.dark.app.facturacion</groupId>
-	<artifactId>a</artifactId>
+	<artifactId>springboot-dark-servicio-facturacion</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-dark-servicio-facturacion</name>
 	<description>Demo project for Spring Boot</description>
