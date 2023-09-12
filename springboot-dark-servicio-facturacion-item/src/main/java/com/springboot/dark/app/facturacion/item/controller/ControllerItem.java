@@ -20,7 +20,7 @@ public class ControllerItem {
 	private ServicioItems servicioItems;
 	
 	@GetMapping("/listar")
-	public List<Items> kistar(){
+	public List<Items> listar(){
 		return servicioItems.findAll();
 	}
 	
