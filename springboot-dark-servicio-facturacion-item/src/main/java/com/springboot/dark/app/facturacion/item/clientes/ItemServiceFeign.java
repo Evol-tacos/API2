@@ -1,4 +1,4 @@
-package com.springboot.dark.app.facturacion.item.modelo.servicio;
+package com.springboot.dark.app.facturacion.item.clientes;
 
 import java.util.Date;
 import java.util.List;
@@ -6,8 +6,9 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import com.springboot.dark.app.facturacion.item.clientes.FacturasRest;
+
 import com.springboot.dark.app.facturacion.item.modelo.Items;
+import com.springboot.dark.app.facturacion.item.modelo.servicio.ServicioItems;
 
 @Service("serviceFeign")
 @Primary
